@@ -47,7 +47,6 @@
     .hero {
       width: 100%;
       height: 100%;
-      background-color: red;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -56,6 +55,10 @@
         width: 10%;
         background-color: azure;
       }
+    }
+
+    .h1 {
+      font: var(--font-machina);
     }
   }
 

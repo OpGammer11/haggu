@@ -37,6 +37,7 @@ export default function Home() {
             <div className={styles.threed}>
               <Spline scene="https://prod.spline.design/LgYxjBYA3hz0em38/scene.splinecode" />
             </div>
+            <h1 className={styles.h1}>M</h1>
           </div>
         </div>
       </main>
