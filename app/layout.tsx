@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
@@ -64,7 +64,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={`${machina.variable} ${migra.variable}`} lang="en">
-      <body>{children}</body>
+      <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );
 }

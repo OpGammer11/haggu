@@ -1,10 +1,11 @@
-"use client";
 import Image from "next/image";
-import styles from "../page.module.css";
-import Spline from "@splinetool/react-spline";
+import styles from "../page.module.scss";
+import { SplineViewer } from "../components/Threed";
 
 export default function App() {
   return (
-    <Spline scene="https://prod.spline.design/LgYxjBYA3hz0em38/scene.splinecode" />
+    <div className={styles.container}>
+      <SplineViewer eventsTarget="global" />
+    </div>
   );
 }

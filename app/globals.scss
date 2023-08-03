@@ -1,8 +1,11 @@
+@import './variables.scss';
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 *::selection {
   background-color: #ff00ff;
   color: #000000;
@@ -11,14 +14,19 @@
 html,
 body {
   font-size: 10px;
-  max-width: 100vw;
-  overflow: hidden;
-  background-color: #1a181f;
+  width: 100%;
+  max-width: calc(100vw - 1rem);
   color: white;
   font-family: var(--font-machina);
 }
+
+html {
+  background-color: $bg-color;
+  scroll-behavior: smooth;
+}
+
 img {
-  pointer-events: none;
+  user-select: none;
 }
 
 a {
@@ -26,8 +34,8 @@ a {
   text-decoration: none;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-} */
+}
