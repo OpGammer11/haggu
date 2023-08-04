@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./dashboard.module.scss";
+import styles from "../dashboard.module.scss";
 
-export default function Dashboard() {
+export default function Profile() {
   return (
     <>
       <div className={styles.wapper}>
-        <h1>dashboard</h1>
+        <h1>Profile</h1>
       </div>
     </>
   );

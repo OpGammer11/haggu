@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useRef, useEffect, useState, memo } from "react";
 import Spline from "@splinetool/react-spline";
 // export default function Threed() {
